@@ -39,6 +39,7 @@ Nous avons convenu que le projet sera divisé sur 3 équipe:
   - membres
     - Chaima lamouchi
     - Maysa
+
 ci dessous une première représentation de l'organisation du repo
 
 ![archi_repo](../image/organisation_repo.png)
