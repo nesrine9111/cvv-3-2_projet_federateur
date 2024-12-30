@@ -3,9 +3,9 @@
 ## 📦 Pré-requis
 1. **Système d'exploitation** : Linux/Windows/macOS.
 2. **Logiciels nécessaires** :
-   - Minikube
+   - Minikube (kubeadm, kind, Rancher comme alternative aussi)
    - Kubectl
-   - Docker
+   - Docker ou autre CRE comme CRIO, containerd
 
 ---
 
