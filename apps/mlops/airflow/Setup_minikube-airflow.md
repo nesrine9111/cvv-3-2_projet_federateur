@@ -105,6 +105,6 @@ secret: []
 # - envName: ""
 #   secretName: ""
 #   secretKey: ""
-
+```
 Pour plus de variables consultez ce lien:
 https://github.com/apache/airflow/blob/main/chart/values.yaml#L285
