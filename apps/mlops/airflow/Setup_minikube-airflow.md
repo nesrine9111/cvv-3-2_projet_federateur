@@ -22,10 +22,14 @@
 ---
 
 ### 2. Installer Apache Airflow sous Minikube  
+```
   kubectl create namespace airflow
   helm repo add apache-airflow https://airflow.apache.org
   helm repo update
   helm install airflow apache-airflow/airflow --namespace airflow
   kubectl port-forward svc/airflow-webserver 8080:8080 -n airflow
+```
  - Ouvrez votre navigateur : 
    http://localhost:8080
+
+Ou remplacer localhost par l'ip du cluster qui permet l'accès au service ainsi au pod contenant l'application airflow
