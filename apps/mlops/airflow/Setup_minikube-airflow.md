@@ -120,7 +120,7 @@ https://github.com/apache/airflow/blob/main/chart/values.yaml#L285
 helm install airflow apache-airflow/airflow \   --set airflow.executor=CeleryExecutor,workers.replicas=3
 ```
  
-# 1. airflow.executor=CeleryExecutor : 
+#### A. airflow.executor=CeleryExecutor : 
   - Dans Apache Airflow, l'executor est responsable de la gestion de l'exécution des tâches. Airflow prend en charge différents types d'executors en fonction de l'échelle et de l'infrastructure.
   - CeleryExecutor :
     Cet executor est conçu pour l'exécution distribuée des tâches.
@@ -128,12 +128,12 @@ helm install airflow apache-airflow/airflow \   --set airflow.executor=CeleryExe
     Utile pour exécuter des workflows à grande échelle où les tâches doivent être distribuées sur plusieurs machines.
     Nécessite un broker de messages (comme RabbitMQ ou Redis) et un backend pour les résultats (comme une base de données).
     Si vous exécutez Airflow dans un cluster Kubernetes et que vous avez besoin d'une exécution distribuée, le CeleryExecutor est souvent préféré à l'executor par défaut, comme SequentialExecutor ou LocalExecutor.
-# 2. workers.replicas=3 :
+#### B. workers.replicas=3 :
   - Cette configuration est spécifique au Helm chart pour Apache Airflow.
     workers.replicas :
     Définit le nombre de pods worker Airflow qui seront créés dans le cluster Kubernetes.
     Les workers sont les entités responsables de l'exécution des tâches dans vos workflows (DAGs).
     En définissant workers.replicas=3, cela signifie que 3 pods worker seront créés pour gérer les tâches.
 
-# 3 Exemple d'utilisation :
+#### C. Exemple d'utilisation :
    - Si vous utilisez le CeleryExecutor et que vous prévoyez d'exécuter plusieurs tâches simultanément, vous pouvez définir workers.replicas=3 pour avoir 3 pods worker traitant les tâches en parallèle. Ensemble, l'executor et le paramètre des réplicas permettent une exécution des tâches distribuée et évolutive.
