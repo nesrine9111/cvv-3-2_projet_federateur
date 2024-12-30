@@ -106,5 +106,9 @@ secret: []
 #   secretName: ""
 #   secretKey: ""
 ```
+La commande qu'on peut utiliser pour lancer la chart en personnalisant les variables à travares le fichier values.yaml est la suivante:
+```
+helm install airflow apache-airflow/airflow --values values.yaml
+```
 Pour plus de variables consultez ce lien:
 https://github.com/apache/airflow/blob/main/chart/values.yaml#L285
