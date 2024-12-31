@@ -10,43 +10,32 @@
 
     -   Commande : minikube start
 
-![](./images/media/image1.png){width="6.4895877077865265in"
-height="3.133853893263342in"}
-
+![](./images/media/image1.png)
 **2. Installation de kubectl**
 
-![](./images/media/image2.png){width="6.3in"
-height="0.4923261154855643in"}
+![](./images/media/image2.png)
 
-![](./images/media/image3.png){width="6.3in"
-height="0.667587489063867in"}
+![](./images/media/image3.png)
 
 **3. Création des fichiers de déploiement pour PostgreSQL**
 
-![](./images/media/image4.png){width="6.3in"
-height="1.8997987751531058in"}
+![](./images/media/image4.png)
 
 **4. Configuration des services**
 
-![](./images/media/image5.png){width="6.3in"
-height="0.6811122047244095in"}
+![](./images/media/image5.png)
 
 **5. Accéder à Airflow**
 
-![](./images/media/image6.png){width="6.3in"
-height="2.95709864391951in"}
+![](./images/media/image6.png)
 
 **Page d'accueil :**
 
-![](./images/media/image7.png){width="6.3in"
-height="3.3324956255468066in"}
-
+![](./images/media/image7.png)
 **DAGs : Exemple**
 
-![](./images/media/image8.png){width="6.3in"
-height="1.6557261592300963in"}
+![](./images/media/image8.png)
 
 **8. Suivi et gestion des logs**
 
-![](./images/media/image9.png){width="6.3in"
-height="2.770424321959755in"}
+![](./images/media/image9.png)
