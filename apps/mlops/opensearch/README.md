@@ -167,5 +167,6 @@ Pour déployer OpenSearch sur votre cluster Kubernetes, vous pouvez utiliser la 
 ```bash
 helm install mon-deploiement opensearch/opensearch
 ```
+![Capture d’écran 2025-01-25 214318](https://github.com/user-attachments/assets/3f6ccce3-ab4d-4de7-8093-6f3ad0f71fd0)
 
 ![Capture d’écran 2025-01-25 214318](https://github.com/user-attachments/assets/ad7a792f-31eb-4065-82fb-51bb61431a96)
