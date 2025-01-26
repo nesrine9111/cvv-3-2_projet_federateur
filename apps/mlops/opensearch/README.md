@@ -54,6 +54,8 @@ minikube start
 ```
 Cela lancera un cluster Kubernetes local avec un seul nœud. Vous pouvez maintenant déployer vos applications sur ce cluster.
 
+![Capture d’écran 2025-01-25 211124](https://github.com/user-attachments/assets/9f0b481f-20e1-4c8a-a34f-52da93dc2f74)
+
 ---
 
 -**kubectl** est l'outil CLI pour interagir avec Kubernetes.
@@ -86,6 +88,10 @@ Exécutez la commande suivante pour vérifier que `kubectl` est bien installé:
 ```bash
 kubectl version --client
 ```
+
+![Capture d’écran 2025-01-25 213040](https://github.com/user-attachments/assets/14f8e4fc-7c90-4ecc-ad2e-449600a7d134)
+
+
 ---
 
 - **Helm** : Helm est un gestionnaire de packages pour Kubernetes.
