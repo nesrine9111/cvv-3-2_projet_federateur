@@ -9,6 +9,6 @@ Marwane JAOUADI
 Amine KRIMI 
 
 # OpenSearch Project:
-  **AYADI NESRINE**
-  **OMAR SFAXI**
+AYADI NESRINE
+OMAR SFAXI
 
