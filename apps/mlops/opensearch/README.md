@@ -113,3 +113,4 @@ Exécutez la commande suivante pour vérifier que `Helm` est bien installé:
 ```bash
 helm version 
 ```
+![Capture d’écran 2025-01-25 213331](https://github.com/user-attachments/assets/3f1f1f58-9a5e-4e66-aaaa-2be80fcb61df)
