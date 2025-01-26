@@ -170,3 +170,46 @@ helm install mon-deploiement opensearch/opensearch
 ![Capture d’écran 2025-01-25 214318](https://github.com/user-attachments/assets/3f6ccce3-ab4d-4de7-8093-6f3ad0f71fd0)
 
 ![Capture d’écran 2025-01-25 214318](https://github.com/user-attachments/assets/ad7a792f-31eb-4065-82fb-51bb61431a96)
+
+
+---
+
+# Installation d'OpenSearch avec Docker
+
+OpenSearch est une solution open-source pour la recherche et l'analyse des données. Cette section explique comment installer et exécuter rapidement OpenSearch avec Docker.
+
+## Prérequis
+
+- **Docker** installé sur votre système ([Documentation officielle](https://docs.docker.com/get-docker/)).
+- Minimum 4 Go de mémoire disponible pour OpenSearch.
+
+## Instructions
+
+1- **Téléchargez les images de DOCKER HUB :**
+   ```bash
+   docker pull opensearchproject/opensearch:2
+   docker pull opensearchproject/opensearch-dashboards:2
+   ```
+
+---
+
+2. **Téléchargez et exécutez OpenSearch :**
+   ```bash
+    docker run -d -p 9200:9200 -p 9600:9600 -e "discovery.type=single-node" -e "OPENSEARCH_INITIAL_ADMIN_PASSWORD=<custom-admin-password>"    opensearchproject/opensearch:latest
+   ```
+
+---
+
+![Capture d’écran 2025-01-25 234416](https://github.com/user-attachments/assets/2b3a9d29-22f6-4bf7-80c2-12f58839c045)
+
+---
+
+![Capture d’écran 2025-01-26 001511](https://github.com/user-attachments/assets/8dc3c311-416f-4250-b94b-c28126553a9d)
+
+---
+
+![Capture d’écran 2025-01-26 004018](https://github.com/user-attachments/assets/ae3b3ce7-54a2-4dbd-93e3-16d3b387c817)
+
+---
+
+![Capture d’écran 2025-01-26 011509](https://github.com/user-attachments/assets/f2150b7f-801c-405b-8747-5e02f0601159)
