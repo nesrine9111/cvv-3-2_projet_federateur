@@ -120,3 +120,52 @@ Exécutez la commande suivante pour vérifier que `Helm` est bien installé:
 helm version 
 ```
 ![Capture d’écran 2025-01-25 213331](https://github.com/user-attachments/assets/3f1f1f58-9a5e-4e66-aaaa-2be80fcb61df)
+
+
+---
+
+# Installation d'OpenSearch avec Helm
+
+Ce guide fournit les étapes nécessaires pour installer OpenSearch sur un cluster Kubernetes en utilisant Helm.
+
+## Étape 1 : Ajouter le dépôt Helm d'OpenSearch
+
+Pour installer OpenSearch via Helm, ajoutez d'abord le dépôt Helm des charts OpenSearch à votre configuration Helm.
+
+```bash
+helm repo add opensearch https://opensearch-project.github.io/helm-charts/
+```
+
+---
+
+## Étape 2 : Mettre à jour les dépôts Helm
+
+Mettez à jour vos dépôts `Helm` .
+
+```bash
+helm repo update
+```
+
+---
+
+## Etape 3 : Recherche des charts Helm OpenSearch
+
+Pour rechercher des charts Helm liés à OpenSearch, vous pouvez utiliser la commande suivante :
+
+```bash
+helm search repo opensearch
+```
+
+![Capture d’écran 2025-01-25 214318](https://github.com/user-attachments/assets/642eec64-22fd-44ef-84da-a4208100b485)
+
+---
+
+## Etape 4 : Déployer OpenSearch avec Helm
+
+Pour déployer OpenSearch sur votre cluster Kubernetes, vous pouvez utiliser la commande suivante :
+
+```bash
+helm install mon-deploiement opensearch/opensearch
+```
+
+![Capture d’écran 2025-01-25 214318](https://github.com/user-attachments/assets/ad7a792f-31eb-4065-82fb-51bb61431a96)
