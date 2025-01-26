@@ -3,4 +3,5 @@
 - [https://github.com/opensearch-project/OpenSearch](https://github.com/opensearch-project/OpenSearch)
 
 # contributeurs
-- 
+- **AYADI NESRINE**
+- **OMAR SFAXI**
