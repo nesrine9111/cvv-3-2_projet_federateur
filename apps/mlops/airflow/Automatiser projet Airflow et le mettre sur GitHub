@@ -1,0 +1,43 @@
+Pour automatiser ton projet Airflow et le mettre sur GitHub, voici un plan détaillé :
+
+Crée un fichier .gitignore adapté à Airflow :
+
+Exemple de contenu :
+*.pyc
+__pycache__/
+airflow.db
+logs/
+config/
+.env
+________________________________________
+2. Initialiser un dépôt Git local
+Dans le répertoire de ton projet :
+git init
+git add .
+git commit -m "Initialisation du projet Airflow"
+________________________________________
+3. Automatiser avec des scripts
+Crée des scripts pour simplifier l'installation et la gestion du projet. Par exemple :
+•Script pour installer les dépendances (setup.sh) :
+#!/bin/bash
+echo "Création de l'environnement virtuel..."
+python3 -m venv airflow-venv
+source airflow-venv/bin/activate
+echo "Installation des dépendances..."
+pip install -r requirements.txt
+echo "Installation terminée."
+•Script pour démarrer Airflow (start_airflow.sh) :
+#!/bin/bash
+source airflow-venv/bin/activate
+export AIRFLOW_HOME=~/airflow-venv
+airflow db init
+airflow webserver -p 8080 &
+airflow scheduler &
+________________________________________
+4. Mettre ton projet sur GitHub
+1.Crée un nouveau dépôt sur GitHub.
+2.Lie ton dépôt local avec GitHub :
+git remote add origin https://github.com/<ton-nom-utilisateur>/<nom-du-projet>.git
+git branch -M main
+git push -u origin main
+
